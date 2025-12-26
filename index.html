@@ -85,7 +85,7 @@ document.getElementById("takePhoto").onclick = () => {
   canvas.getContext("2d").drawImage(preview, 0, 0);
   canvas.toBlob(blob => {
     const url = URL.createObjectURL(blob);
-    downloads.innerHTML = `<a href="${url}" download="photo.png">Download Photo</a>`;
+    downloads.innerHTML = `<a href="${url}" download="Playblueandplay.png">Download Photo</a>`;
   });
 };
 
@@ -96,7 +96,7 @@ document.getElementById("startRec").onclick = () => {
   recorder.onstop = () => {
     const blob = new Blob(chunks, { type: "video/webm" });
     const url = URL.createObjectURL(blob);
-    downloads.innerHTML = `<video controls src="${url}"></video><a href="${url}" download="recording.webm">Download Video</a>`;
+    downloads.innerHTML = `<video controls src="${url}"></video><a href="${url}" download="UseYennerOnlineGNET.webm">Download Video</a>`;
   };
   recorder.start();
 };
